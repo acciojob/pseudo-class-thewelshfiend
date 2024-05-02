@@ -1,1 +1,29 @@
 /*  your css code here. If applicable */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    margin: 20px;
+}
+#container {
+    &::before {
+        content: 'Before Element';
+        color: #f00;
+        font-size: 20px;
+    }
+
+    &::after {
+        content: 'After Element';
+        color: #f00;
+        font-size: 20px;
+    }
+}
