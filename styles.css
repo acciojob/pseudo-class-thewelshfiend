@@ -14,16 +14,14 @@ body {
 #container {
     margin: 20px;
 }
-#container {
-    &::before {
+#container::before {
         content: 'Before Element';
         color: rgb(255, 0, 0);
         font-size: 20px;
     }
 
-    &::after {
+#container::after {
         content: 'After Element';
         color: rgb(255, 0, 0);
         font-size: 20px;
     }
-}
